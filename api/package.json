@@ -1,0 +1,20 @@
+{
+  "name": "ympaj-api",
+  "version": "1.0.0",
+  "description": "backend for ympaj website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L index.js",
+    "test": "mocha -w ./tests/**/*.spec.js"
+  },
+  "author": "aagenesds22",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.7",
+    "nodemon": "^2.0.7"
+  }
+}

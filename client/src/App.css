@@ -1,0 +1,54 @@
+.App {
+  
+  background: url('https://wallpaperaccess.com/full/2135518.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: calc(3*100vh);
+  
+}
+
+
+
+.App-header {
+  min-height: min-content;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  
+}
+
+.Swiper-section {
+  
+  /* background-position: 0px -72px; */
+  
+  height:45%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .App {
+  background: url('https://wallpaperaccess.com/full/2135518.jpg');
+  background-size: cover;
+  height: 100vh;
+  }
+
+  .App-header {
+    margin-bottom: 0.5em;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
