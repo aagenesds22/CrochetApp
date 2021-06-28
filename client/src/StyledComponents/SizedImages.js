@@ -7,9 +7,9 @@ const SizedImage = styled.img`
     border-radius: 50%;
     content: url(${props => props.src});
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 600px){
         
-        height: auto;
+        height: 100%;
         width: 100%;
         border-radius: 0;
     }

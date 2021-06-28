@@ -32,8 +32,8 @@ function App() {
     
     <Route path='/' component={NavBar} />
     <Route exact path='/' component={Home}/>
-    
     <Route exact path='/galleryCrochet' component={'NONE'} />
+    <Route exact path='/galleryCrochet/:type' component={'NONE'} />
     
     </div>
   );

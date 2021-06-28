@@ -1,6 +1,7 @@
 import {createGlobalStyle} from 'styled-components';
 import GreatVibes from './RWmMoKWR9v4ksMfaWd_JN9XFiaQ.woff2';
 import SueEllen from './wXK3E20CsoJ9j1DDkjHcQ5ZL8xRaxru9no1P2w.woff2';
+import Itim from './0nknC9ziJOYe8ANAkA.woff2';
 
 export default createGlobalStyle`
 
@@ -14,16 +15,25 @@ export default createGlobalStyle`
     font-style: normal;
     font-display: swap;
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  
 
-
-    @font-face {
-      font-family: 'Sue Ellen Francisco';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url(${SueEllen}) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}`
+  @font-face {
+    font-family: 'Sue Ellen Francisco';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(${SueEllen}) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+       
+       
+  @font-face {
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Itim'), local('Itim'), url(${Itim}) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }`
 
 
 /* @font-face {

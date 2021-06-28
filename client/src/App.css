@@ -1,10 +1,11 @@
 .App {
   
-  background: url('https://wallpaperaccess.com/full/2135518.jpg');
+  background-color: white;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: calc(3*100vh);
+  min-height: 100vh;
+  height: auto;
   
 }
 
@@ -30,10 +31,10 @@
 }
 
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 600px) {
 
   .App {
-  background: url('https://wallpaperaccess.com/full/2135518.jpg');
+  
   background-size: cover;
   height: 100vh;
   }
@@ -42,7 +43,7 @@
     margin-bottom: 0.5em;
   }
 }
-
+ */
 
 @keyframes App-logo-spin {
   from {

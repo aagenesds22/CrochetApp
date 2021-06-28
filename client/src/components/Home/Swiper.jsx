@@ -1,5 +1,5 @@
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectFade, EffectCube, EffectFlip, Parallax, EffectCoverflow } from 'swiper';
-import ViewPort from '../Complementary/WidthHook';
+import ViewPort from '../../hooks/WidthHook';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../App.css';
 import 'swiper/swiper.scss';
@@ -28,12 +28,15 @@ const SlideContainer = styled.div`
    width: 90%;
    display: flex;
    flex-direction: row;
+   position: relative;
    align-items: center;
+   top: 25px;
    justify-content: space-around;
 
-   @media screen and (max-width: 700px) {
+   @media screen and (max-width: 600px) {
        width: 100%;
-       
+       top: 0;
+       height: 100%;
    }
    
    `
@@ -52,12 +55,12 @@ const SlideTextContainer = styled.div`
           letter-spacing: 9px;
           font-weight: 400;
           margin-bottom: 0;
-          font-family: 'Sue Ellen Francisco';
+          font-family: 'Itim';
           color: white;
           
       }
 
-      @media screen and (max-width: 700px){
+      @media screen and (max-width: 600px){
         position: absolute;
     
         top: 0;
@@ -73,22 +76,24 @@ const SlideTextContainer = styled.div`
 `
 
 const SlidePar = styled.p`
-color: white;
-width: 100%;
-text-shadow: 1px 1px 0.1px black, 1px 1px 0.1px black, 1px 1px 0.1px black, 1px 1px 0.1px black;
+        color: white;
+        width: 100%;
+        font-size: 21px;
+        text-shadow: 1px 1px 0.1px black, 1px 1px 0.1px black, 1px 1px 0.1px black, 1px 1px 0.1px black;
+        font-family: 'Itim';
 
 `
 
 function SlideCard(props) {
     return(
         <SlideContainer>
-            <div>
+            
                     <SizedImage src={props.crcName}></SizedImage>
                     <SlideTextContainer>
                     <h3 className="title-crochet">{props.title}</h3>
                     <SlidePar>{props.textDescription}</SlidePar>
                     </SlideTextContainer>
-            </div>
+            
         </SlideContainer>
     )
 }
@@ -125,10 +130,12 @@ export default () => {
           onSwiper={(swiper) => console.log(swiper) }
         >
             
-            <SwiperSlide><SlideCard crcName={CrochetOne} title={width > 700 && 'Cachorra'} textDescription={width > 700 && textSlide}/></SwiperSlide>
-            <SwiperSlide><SlideCard crcName={CrochetTwo} title='Cachorrota' /></SwiperSlide>
-            <SwiperSlide><SlideCard crcName={CrochetThree} title='Checho' /></SwiperSlide>
-            <SwiperSlide><SlideCard crcName={CrochetFour} title='Coco' /></SwiperSlide>
+            <SwiperSlide><SlideCard crcName={CrochetOne} title={width > 600 && 'Amigurumis'} textDescription={width > 600 && textSlide}/></SwiperSlide>
+            <SwiperSlide><SlideCard crcName={CrochetTwo} title='Abrigos' textDescription={width > 600 && textSlide} /></SwiperSlide>
+            <SwiperSlide><SlideCard crcName={CrochetThree} title='Atrapasueños' textDescription={width > 600 && textSlide} /></SwiperSlide>
+            <SwiperSlide><SlideCard crcName={CrochetThree} title='Sweters' textDescription={width > 600 && textSlide} /></SwiperSlide>
+            <SwiperSlide><SlideCard crcName={CrochetFour} title='Hogar' textDescription={width > 600 && textSlide} /></SwiperSlide>
+            <SwiperSlide><SlideCard crcName={CrochetFour} title='Ponchos' textDescription={width > 600 && textSlide} /></SwiperSlide>
           
 
         </Swiper>
@@ -143,8 +150,8 @@ export default () => {
     return (
 
     <div>
-        {width < 700 && renderSwiper('fade')}
-        {width > 700 && renderSwiper('slide')}
+        {width < 600 && renderSwiper('fade')}
+        {width > 600 && renderSwiper('slide')}
     </div>
     )
 

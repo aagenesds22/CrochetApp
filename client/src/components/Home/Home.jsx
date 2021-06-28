@@ -3,17 +3,13 @@ import React from 'react';
 import NavBar from './AppBar';
 import Swip from './Swiper';
 import {Route} from 'react-router-dom';
-
+import TopDesigns from './TopDesigns';
 
 function Home() {
-    return (
-        <>
-        
-        
-      <section className="Swiper-section">
-      <Swip />
-      </section>
-      </>
+    return (<>
+          <Swip />
+          <TopDesigns />
+          </>
     )
 }
 
