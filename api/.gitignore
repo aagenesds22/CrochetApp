@@ -12,14 +12,18 @@ node_modules
 # production
 /build
 
-# misc
-.DS_Store
+# config
+
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 .env
 env
+
+# misc
+.DS_Store
+
 
 
 
