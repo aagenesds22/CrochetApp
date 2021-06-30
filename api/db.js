@@ -17,6 +17,8 @@ const url = `mongodb+srv://${USER_DB}:${PASS_DB}@${CLUSTER}/${DB_NAME}?retryWrit
 const dbConnect = moongose.connect(url, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: true,
 }).then(()=> console.log('database OK'), (err)=> console.log('No database running', err));
  
 module.exports = dbConnect
