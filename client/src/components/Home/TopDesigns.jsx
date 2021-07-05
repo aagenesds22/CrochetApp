@@ -34,22 +34,15 @@ export default function TopDesigns () {
             
                 style={{
                     display: 'flex',
-                    flexDirection: 'column',
+                    
                     width: `${window.innerWidth > 600 ? '60%' : '100%' }`,
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     justifyContent: 'space-between'
             }}> 
-                <div style={{
-                    height: 'max-content',
-                    width: '100%',
-                    backdropFilter: 'blur(0px)',
-                    borderRadius: '20px',
-                    display: 'flex',
-                    backgroundColor: 'rgb(0,0,0,0.5)',
-                }}>
-                    <div>
-                    <HandMade style={{fill:'pink', height: '110px', width: '145px'}}/>
+                <div className="features-web">
+                    <div style={{width: 'max-content'}}>
+                        <HandMade style={{fill:'pink', height: '110px', width: '145px'}}/>
                     </div>
                     <div style={{color: 'white'}}>
                         <h3>Hecho a mano</h3>
@@ -59,14 +52,7 @@ export default function TopDesigns () {
                         </p>
                     </div>
                 </div>
-                <div style={{
-                    height: '135px',
-                    width: '100%',
-                    borderRadius: '20px',
-                    display: 'flex',
-                    backdropFilter: 'blur(0px)',
-                    backgroundColor: 'rgb(0,0,0,0.5)',
-                }}>
+                <div className="features-web">
                     <div style={{width: 'max-content'}}>
                         <OnRequests style={{fill: 'rgb(215, 215, 12)', marginTop:'8%', height: '110px', width: '145px'}}/>
                     </div>
@@ -77,17 +63,9 @@ export default function TopDesigns () {
                         </p>
                     </div>
                 </div>
-                <div style={{
-                    height: '135px',
-                    width: '100%',
-                    borderRadius: '20px',
-                    display: 'flex',
-                    backdropFilter: 'blur(0px)',
-                    backgroundColor: 'rgb(0,0,0,0.5)',
-                    
-                }}>
+                <div className="features-web">
                     <div style={{width: 'max-content'}}>
-                        <Address style={{fill: 'rgb(12, 165, 220)', height: '145px', width: '125px', paddingLeft: '10px', paddingRight: '10px', margin: '0 auto'}}/>
+                        <Address style={{fill: 'rgb(12, 165, 220)', height: '122px', width: '125px', paddingLeft: '10px', paddingRight: '10px', margin: '0 auto'}}/>
                     </div>
                     <div style={{color: 'white'}}>
                         <h3>Envíos</h3>

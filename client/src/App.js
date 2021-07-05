@@ -5,6 +5,7 @@ import {Route} from 'react-router-dom';
 import Home from './components/Home/Home';
 import NavBar from './components/Home/AppBar';
 import GlobalFonts from './assets/fonts/fonts';
+import Gallery from './components/Gallery/Gallery';
 
 
 
@@ -30,10 +31,10 @@ function App() {
     <div className="App">
       <GlobalFonts />  
     
-    <Route path='/' component={NavBar} />
-    <Route exact path='/' component={Home}/>
-    <Route exact path='/galleryCrochet' component={'NONE'} />
-    <Route exact path='/galleryCrochet/:type' component={'NONE'} />
+        <Route path='/' component={NavBar} />
+        <Route exact path='/' component={Home}/>
+        <Route exact path='/galleryCrochet' component={Gallery} />
+        <Route exact path='/galleryCrochet/:type' component={'NONE'} />
     
     </div>
   );

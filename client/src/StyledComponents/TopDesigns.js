@@ -3,26 +3,69 @@ import styled from 'styled-components';
 
 
 const MainContainer = styled.div`
+
         height: 725px;
         width: 100%;
         background: url('https://i.pinimg.com/originals/10/cb/e8/10cbe8dbf58d255307efce49b60f0472.jpg');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+    
+
+        .features-web {
+            height: auto;
+            width: 100%;
+            backdrop-filter: blur(0px);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(122,122,122,0.1);
+            transition: all 0.15s ease-in;
+            font-smooth: always;
+            backface-visibility: hidden;
+            backdrop-filter: blur(3px);
+            -webkit-font-smoothing: subpixel-antialiased;
+            
+        }
+
+        .features-web:hover {
+            background-color: rgb(255,255,255,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+       .features-web h3 {
+            font-family: 'Itim';
+            font-size: 23px;
+            margin-bottom: 11px;
+       }
+
+        .features-web p {
+            margin: 0 auto;
+            padding-right: 3px;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Itim';
+            letter-spacing: 1px;
+            text-shadow: 0.1px 0.1px 2px black, 0.1px 0.1px 2px black, 0.1px 0.1px 2px black, 0.1px 0.1px 2px black;
+        }
 
         .cardMainContainer {
             margin-top: 20%;
-            
             opacity: 0;
-            transition: all 0.2s ease-in;
+            transition: all 0.1s ease-in;
         }
 
         .visibleCardContainer {
             transition: all 0.5s ease-in;
             margin-top: 10%;
+            display: flex;
+            height: 70%;
             opacity: 1;
 
         }
+    
+
+   
 `
 
 export {

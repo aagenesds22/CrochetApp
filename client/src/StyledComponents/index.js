@@ -7,6 +7,7 @@ import {
 } from './SizedImages';
 
 import {MainContainer} from './TopDesigns';
+import {MainGrid} from './MainGrid';
 
 import {
     ButtonBattery, 
@@ -18,6 +19,8 @@ import {
     MainNavBarContainer
 } from './AppBarStyles';
 
+import {StyledSideBar} from './StyledSideBar';
+
 export {
     SwiperContainer,
     SizedImage,
@@ -26,7 +29,9 @@ export {
     BackgroundBtnAnim, 
     deployable,
     UnderBar,
+    MainGrid,
     WelcomeLogo,
     MainNavBarContainer,
-    MainContainer
+    MainContainer,
+    StyledSideBar,
 }
