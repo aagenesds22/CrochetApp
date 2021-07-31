@@ -10,15 +10,6 @@
 }
 
 
-
-.App-header {
-  min-height: min-content;
-  display: flex;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  
-}
-
 .Swiper-section {
   
   /* background-position: 0px -72px; */
@@ -26,9 +17,6 @@
   height:45%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 
 /* @media screen and (max-width: 600px) {
@@ -45,11 +33,3 @@
 }
  */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

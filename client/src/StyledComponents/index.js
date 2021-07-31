@@ -1,5 +1,8 @@
 import {
-    SwiperContainer
+    SwiperContainer,
+    SlidePar,
+    SlideContainer,
+    SlideTextContainer
 } from './SwiperContainer';
 
 import {
@@ -23,6 +26,9 @@ import {StyledSideBar} from './StyledSideBar';
 
 export {
     SwiperContainer,
+    SlideTextContainer,
+    SlidePar,
+    SlideContainer,
     SizedImage,
     ButtonBattery, 
     Buttonex, 

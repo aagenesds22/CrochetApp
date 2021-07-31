@@ -1,5 +1,5 @@
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectFade, EffectCube, EffectFlip, Parallax, EffectCoverflow } from 'swiper';
-import ViewPort from '../../hooks/WidthHook';
+import ViewPort from '../../hooks/widthHook';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../App.css';
 import 'swiper/swiper.scss';
@@ -17,81 +17,24 @@ import styled from 'styled-components';
 import {
     SwiperContainer,
     SizedImage,
+    SlideContainer,
+    SlideTextContainer,
+    SlidePar
 } from '../../StyledComponents/index';
+import video from '../../assets/mp4/final_60fe332c7a68bd012f9f34cc_315621.mp4';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, EffectCube, Parallax]);
 
 
-
-const SlideContainer = styled.div`
-   
-   width: 90%;
-   display: flex;
-   flex-direction: row;
-   position: relative;
-   align-items: center;
-   top: 25px;
-   justify-content: space-around;
-
-   @media screen and (max-width: 600px) {
-       width: 100%;
-       top: 0;
-       height: 100%;
-   }
-   
-   `
-
-const SlideTextContainer = styled.div`
-      width: 49%;
-      margin-bottom: 29px;
-      display: flex;
-      flex-direction: column;
-      justify-content: baseline;
-
-      .title-crochet {
-          font-size: 72px;
-          height: min-content;
-          margin-top: 0px;
-          letter-spacing: 9px;
-          font-weight: 400;
-          margin-bottom: 0;
-          font-family: 'Itim';
-          color: white;
-          
-      }
-
-      @media screen and (max-width: 600px){
-        position: absolute;
-    
-        top: 0;
-        left: 0;
-        right: 25%;
-        width: 60%;
-
-        .title-crochet {
-            font-size: 60px;
-            color: rgb(255, 255, 255, 0.7);
-        }
-      }
-`
-
-const SlidePar = styled.p`
-        color: white;
-        width: 100%;
-        font-size: 21px;
-        text-shadow: 1px 1px 0.1px black, 1px 1px 0.1px black, 1px 1px 0.1px black, 1px 1px 0.1px black;
-        font-family: 'Itim';
-
-`
-
 function SlideCard(props) {
+
     return(
         <SlideContainer>
             
-                    <SizedImage src={props.crcName}></SizedImage>
-                    <SlideTextContainer>
-                    <h3 className="title-crochet">{props.title}</h3>
-                    <SlidePar>{props.textDescription}</SlidePar>
+                    <SizedImage src={props.crcName} />
+                        <SlideTextContainer>
+                            <h3 className="title-crochet">{props.title}</h3>
+                                <SlidePar>{props.textDescription}</SlidePar>
                     </SlideTextContainer>
             
         </SlideContainer>
@@ -107,21 +50,11 @@ export default () => {
         return (
             <SwiperContainer>
         {/* {width > 700 ? ( */}
+            <video autoPlay muted loop id="test-background">
+                <source src={video} type="video/mp4" />
+            </video>
         <Swiper
           spaceBetween={0}
-      /*     breakpoints={{
-              640: {
-                  width: 640,
-                  slidesPerView: 1
-
-              },
-                768: {
-                      width: 768,
-                      slidesPerView: 2,
-                      
-                  },
-              }
-          } */
           parallax
           effect={effect}
           navigation
@@ -129,6 +62,7 @@ export default () => {
           onSlideChange={() => console.log('slide changed')}
           onSwiper={(swiper) => console.log(swiper) }
         >
+            
             
             <SwiperSlide><SlideCard crcName={CrochetOne} title={width > 600 && 'Amigurumis'} textDescription={width > 600 && textSlide}/></SwiperSlide>
             <SwiperSlide><SlideCard crcName={CrochetTwo} title='Abrigos' textDescription={width > 600 && textSlide} /></SwiperSlide>
@@ -139,10 +73,6 @@ export default () => {
           
 
         </Swiper>
-        
-        
-   {/*  ) : (<h1>any</h1>)
-        } */}
     </SwiperContainer> 
         )
     }

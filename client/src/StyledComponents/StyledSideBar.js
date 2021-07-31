@@ -6,7 +6,7 @@ const StyledSideBar = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(33,33,55, 0.15);
+    background-color: rgb(66,66,88, 0.25);
 
     .title {
         display: flex;

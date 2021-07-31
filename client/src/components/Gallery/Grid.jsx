@@ -3,7 +3,6 @@ import {MainGrid} from '../../StyledComponents/index.js'
 import {
     useQuery,
     gql,
-    
 } from '@apollo/client';
 import GridItem from './GridItem';
 

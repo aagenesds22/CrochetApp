@@ -19,41 +19,41 @@ const OpacityAnimation = keyframes`
 
 
 const MainNavBarContainer = styled.div`
-    background-color:rgb(255, 255, 255, 0.96);
-    height: 127px;
+    background-color:rgb(65, 165, 235, 0.66);
+    height: 115px;
     width: 100%;
+    
+    
     display: flex;
     flex-direction: row;
+    box-shadow: inset 0px -15px 22px 0.5px white;
     justify-content: space-between;
     align-items: center; `
 
 
 const WelcomeLogo = styled.div`
     background-color: transparent;
-    width: 36vw;
-    margin: 0 auto 0 48px;
     height: 95%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin-left: 65px;
 
-    .welcome-message {
-        font-size: 55px;
+    .brand-title {
+        font-size: 46px;
         font-weight: 900;
-        color: black;
+        color: white;
+        text-shadow: 0.1px 0.1px 1px black, 0.1px 0.1px 1px black, 0.1px 0.1px 1px black, 0.1px 0.1px 1px black;
         font-family: 'Great Vibes';
     }
 
     .logo {
         position: relative;
         height: 105px;
+        margin-right: 12px;
         max-height: 100%;
         min-height: 45%;
-        max-width: 11em;
-        margin-right: 35px;
-        width: 110px;
-        transform: scale(1.15, 1.15);
-        top: 5px;
+        
         
     }
 
@@ -86,7 +86,7 @@ const ButtonBattery = styled.div`
 
 const BackgroundBtnAnim = keyframes`
     0% {background-color: transparent}
-    100% {background-color: rgb(0, 0, 0, 0.1)}`
+    100% {background-color: rgb(255, 255, 255, 0.50)}`
 
 
 const Buttonex = styled.button`
@@ -95,24 +95,28 @@ const Buttonex = styled.button`
     min-width: max-content;
     height: 99%;
     background-color: transparent;
-    font-size: 15px;
-    
+    font-size: 16px;
+    font-family: Itim;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
     border: none;
     position: relative;
     outline: none;
+    
 
     
 
     .smooth-appearing {
         animation-name: ${OpacityAnimation};
-        animation-duration: 0.29s;
-        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
         animation-fill-mode: forwards;   
     }
 
    
-
-
     .content  {
         
         width: 70%;
@@ -123,10 +127,14 @@ const Buttonex = styled.button`
 
     &:hover{
         animation-name: ${BackgroundBtnAnim};
-        animation-duration: 0.15s;
+        animation-duration: 0.39s;
         animation-fill-mode: forwards;
     }
 
+    svg {
+        height: 30px;
+        width: 30px;
+    }
     
     
     @media screen and (max-width: 600px) {
@@ -138,7 +146,7 @@ const Buttonex = styled.button`
 
 
 const UnderBar = styled.div`
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
     position: absolute;
     width: 0;
     right: 0;

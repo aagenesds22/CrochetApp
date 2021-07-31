@@ -3,7 +3,7 @@ import './App.css';
 import Swip from './components/Home/Swiper'; */
 import {Route} from 'react-router-dom';
 import Home from './components/Home/Home';
-import NavBar from './components/Home/AppBar';
+import NavBar from './components/AppBar/AppBar';
 import GlobalFonts from './assets/fonts/fonts';
 import Gallery from './components/Gallery/Gallery';
 
@@ -30,7 +30,6 @@ function App() {
   return (
     <div className="App">
       <GlobalFonts />  
-    
         <Route path='/' component={NavBar} />
         <Route exact path='/' component={Home}/>
         <Route exact path='/galleryCrochet' component={Gallery} />

@@ -46,8 +46,11 @@ export default function TopDesigns () {
                     </div>
                     <div style={{color: 'white'}}>
                         <h3>Hecho a mano</h3>
+                        
+                    </div>
+                    <div style={{color: 'white'}}>
                         <p>
-                            Todo lo que ves está hecho 100% a mano, tomando cada detalle como imprescindible 
+                        Todo lo que ves está hecho 100% a mano, tomando cada detalle como imprescindible 
                             para el diseño final.
                         </p>
                     </div>
@@ -58,7 +61,9 @@ export default function TopDesigns () {
                     </div>
                     <div style={{color: 'white'}}>
                         <h3>Pedidos</h3>
-                        <p>Podés realizar un pedido para la creación de un diseño en particular que no hayas visto antes en 
+                    </div>
+                    <div style={{color: 'white'}}>
+                    <p>Podés realizar un pedido para la creación de un diseño en particular que no hayas visto antes en 
                             la galería.
                         </p>
                     </div>
@@ -69,6 +74,8 @@ export default function TopDesigns () {
                     </div>
                     <div style={{color: 'white'}}>
                         <h3>Envíos</h3>
+                    </div>
+                    <div style={{color: 'white'}}>
                         <p>
                             Realizamos envíos a toda la República Argentina. En caso de estar en CABA el tiempo
                             de entrega es inmediato.
